@@ -5,7 +5,7 @@
 	<view class="info">
 		<text>姓名：张三</text>
 		<text>身份证号：1234567</text>
-		<text>鲁东大学-交通学院-教师</text>
+		<text>**大学-**学院-教师</text>
 	</view>
 </view>
 <view class="location1">
