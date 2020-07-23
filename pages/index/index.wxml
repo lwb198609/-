@@ -1,0 +1,53 @@
+<!--pages/index/index.wxml-->
+<!-- <text>pages/index/index.wxml</text> -->
+<view class="header1 backgroundcolor2">
+	<image src="/images/399.png" class="image1"></image>
+	<view class="info">
+		<text>姓名：张三</text>
+		<text>身份证号：1234567</text>
+		<text>鲁东大学-交通学院-教师</text>
+	</view>
+</view>
+<view class="location1">
+	<view class="location2">
+		<image src="/images/dingwei.jpg" class="image2" mode="aspectFit"></image>
+		<text class="locationtext">{{myAddress}}</text>
+	</view>
+	<text class="piancha">位置可能出现细小偏差</text>
+</view>
+
+<view class="temp1 backgroundcolor2">
+	<text class="temp1label">体温</text>
+	<view class="weui-cell">
+		<input class="weui-input" auto-focus placeholder="在此处输入体温值" type="digit" placeholder-class="nickname_placeholder" />
+	</view>
+	<text>℃</text>
+</view>
+<view class="healthlabel">
+	<text >健康信息</text>
+</view>
+
+<view class="health backgroundcolor2">
+	<text class="healthtext">身体是否有异常状态</text>
+	<!-- <view class="page-section-title">默认样式</view> -->
+	<view class="radio1">
+		<!-- <label class="radio">
+			<radio value="r1" />是
+		</label>
+		<label class="radio">
+			<radio value="r2" checked="true" />否
+		</label> -->
+		<!-- <radio></radio> -->
+		<radio-group bindchange="radioChange" class="radiogroup1">
+			<label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="{{value}}">
+				<view class="weui-cell__hd">
+					<radio value="{{item.value}}" checked="{{item.checked}}" />
+				</view>
+				<view class="weui-cell__bd">{{item.name}}</view>
+			</label>
+		</radio-group>
+	</view>
+
+</view>
+
+<button class="submit1">提交</button>
